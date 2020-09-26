@@ -10,6 +10,9 @@ body {
   background-color: black;
   font-family: monospace;
 }
+.projects {
+  margin-top: 50px;
+}
 .header {
   color: white;
   font-size: 30px;
