@@ -17,10 +17,12 @@ function changeMode() {
     for (var i = 0; i < headers.length; i++) {
       headers[i].style = "color: white";
     }
+    document.getElementById("dark-toast").innerHTML = ``;
   } else {
     // console.log("Light Mode on");
     iconBox.style = "border: 2px solid black;border-right-width: 25px;";
     document.getElementsByTagName("body")[0].style = "background-color: white";
+
     for (var i = 0; i < fas.length; i++) {
       fas[i].style = "color:  black";
     }
@@ -28,5 +30,12 @@ function changeMode() {
     for (var i = 0; i < headers.length; i++) {
       headers[i].style = "color: black";
     }
+    document.getElementById(
+      "dark-toast"
+    ).innerHTML = `<div style="background-color: blue; border-radius: 5px; display: inline-block; padding:10px; align-content: center"><h1 style="text-align: center; color:"white">"With the lights out, it's less dangerous"</h1></div>`;
+    setTimeout(() => {
+      document.getElementById("dark-toast").innerHTML = ``;
+      console.log("Nirvana reference removed");
+    }, 3000);
   }
 }
