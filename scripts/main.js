@@ -36,6 +36,6 @@ function changeMode() {
     setTimeout(() => {
       document.getElementById("dark-toast").innerHTML = ``;
       console.log("Nirvana reference removed");
-    }, 3000);
+    }, 1000);
   }
 }
