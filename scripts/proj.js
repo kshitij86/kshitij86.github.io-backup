@@ -8,16 +8,12 @@ function changeMode() {
   if (modeToggle.checked === true) {
     // console.log("Dark Mode on");
     document.getElementsByTagName("body")[0].style = "color: white";
-    document.getElementsByTagName("code")[0].style =
-      "background-color: white; color: black";
     for (var i = 0; i < headers.length; i++) {
       headers[i].style = "color: white";
     }
   } else {
     // console.log("Light Mode on");
     document.getElementsByTagName("body")[0].style = "background-color: white";
-    document.getElementsByTagName("code")[0].style =
-      "background-color: black; color: white";
     for (var i = 0; i < headers.length; i++) {
       headers[i].style = "color: black";
     }
